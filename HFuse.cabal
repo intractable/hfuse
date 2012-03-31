@@ -25,8 +25,8 @@ Library
   }
   Extra-Libraries:        fuse
   Extra-Lib-Dirs:         /usr/local/lib
-  CC-Options:             -D_FILE_OFFSET_BITS=64
+  CC-Options:             -D_FILE_OFFSET_BITS=64 
   if os(darwin) {
-    CC-Options:           "-DMACFUSE"
+    CC-Options:           -DMACFUSE -DFUSE_USE_VERSION=26
   }
 
